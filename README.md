@@ -1,25 +1,69 @@
-# Sudoku Solver with AC-3 Algorithm and GUI
+# 🧩 AC3-Sudoku-Engine
 
-This project is a Sudoku solver implemented in Python using the AC-3 (Arc Consistency Algorithm #3) for constraint propagation and backtracking for solving the puzzle. The solver is equipped with a graphical user interface (GUI) built using the `tkinter` library, allowing users to interactively solve Sudoku puzzles or watch the solver in action.
+> A powerful, interactive Sudoku solver powered by the Arc Consistency 3 (AC-3) algorithm and Backtracking with Forward Checking. 
 
-## Features
+Welcome to the **AC3-Sudoku-Engine**! This repository houses a fully-featured, production-ready Sudoku engine. It provides a robust backend implementation of Constraint Satisfaction Problem (CSP) algorithms to solve Sudoku boards instantly. It also includes an interactive Desktop GUI (Tkinter) and a modern Web UI (Streamlit) for generating, solving, and visualizing Sudoku puzzles.
 
-- **AC-3 Algorithm**: Implements the AC-3 algorithm for constraint propagation to reduce the search space before applying backtracking.
-- **Backtracking with Forward Checking**: Uses backtracking with forward checking to solve the Sudoku puzzle efficiently.
-- **Interactive GUI**: Provides a user-friendly interface for solving Sudoku puzzles interactively or automatically.
-- **Multiple Modes**:
-  - **Input Mode**: Allows users to input their own Sudoku puzzle.
-  - **Solve Mode**: Automatically solves a randomly generated Sudoku puzzle based on the selected difficulty level (Easy, Medium, Hard, Expert).
-  - **Interactive Mode**: Allows users to solve the puzzle interactively with real-time validation.
-- **Visualization**: Displays the arc consistency tree and updates the GUI in real-time as the solver progresses.
+---
 
-## Requirements
+## 🗂️ Lab Index
 
-- Python 3.x
-- `tkinter` (usually comes pre-installed with Python)
+| Lab / Project | Description | Stack |
+| --- | --- | --- |
+| **`01_AC3_Sudoku_Solver`** | The core Sudoku solver utilizing the AC-3 algorithm for constraint propagation. Features a puzzle generator, a Streamlit web app, and a Tkinter desktop app that visualizes the Arc Consistency Tree. | Python, Tkinter, Streamlit |
 
-## Installation
+*(More modules and algorithms can be added here in the future)*
 
-1. Clone the repository:
+---
+
+## 🚀 Features
+
+- **AC-3 Algorithm**: Efficient constraint propagation to drastically reduce the search space.
+- **Backtracking & Forward Checking**: Fast, robust puzzle solving.
+- **Puzzle Generator**: Generate guaranteed-solvable Sudoku puzzles at Easy, Medium, Hard, and Expert difficulties.
+- **Multiple Interfaces**: Choose between a lightweight **Web App** (Streamlit) or a feature-rich **Desktop App** (Tkinter) with real-time visualization of the arc consistency tree.
+
+---
+
+## 🛠️ Installation
+
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/sudoku-solver.git
+   git clone https://github.com/your-username/AC3-Sudoku-Engine.git
+   cd AC3-Sudoku-Engine
+   ```
+
+2. **Set up a virtual environment (Optional but recommended):**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+---
+
+## 🎯 Quick Start
+
+### 🌐 Option 1: Streamlit Web App (Recommended)
+Run the clean, lightweight web interface right in your browser!
+
+```bash
+streamlit run 01_AC3_Sudoku_Solver/app.py
+```
+This will open the app locally at `http://localhost:8501`.
+
+### 💻 Option 2: Tkinter Desktop App
+Run the full desktop GUI with deep visualization features (like the Arc Consistency Tree).
+
+```bash
+python 01_AC3_Sudoku_Solver/src/main.py
+```
+
+---
+
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).
