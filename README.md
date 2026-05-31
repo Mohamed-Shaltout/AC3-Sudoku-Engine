@@ -29,7 +29,7 @@ Welcome to the **AC3-Sudoku-Engine**! This repository houses a fully-featured, p
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/AC3-Sudoku-Engine.git
+   git clone https://github.com/Mohamed-Shaltout/AC3-Sudoku-Engine.git
    cd AC3-Sudoku-Engine
    ```
 
